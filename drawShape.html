@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+      body {
+       font-family: Verdana, Geneva, sans-serif;
+       color: #2E4A62;
+       background-color: #F0EDE5;
+       text-align: center;
+      }
+      #square {
+        height: 50px;
+        width: 50px;
+        background-color: #555;
+      }
+      .centered {
+        margin: auto
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="starter-template">
+        <h1>Drawing shapes</h1>
+        <p class="lead">Fill in the graphs to get a square you want!</p>
+      </div>
+      <!-- Form for input elements -->
+      <div class="form-group">
+        <label for="height">Add height in px:</label>
+        <input id="height" class="form-control" type="number" min="1" placeholder="enter the desired height">
+        <label for="width">Add width in px:</label>
+        <input id="width" class="form-control" type="number" min="1" placeholder="enter the desired width">
+        <label for="color">Add the color:</label>
+        <input id="color" class="form-control" type="text" placeholder="enter the color you want">
+      </div>
+      <!--Button for changing a square into a circle-->
+      <form class="form-group">
+      <div>
+          <input id="checkBox" type="checkbox" name="circle" value="on">
+          <label for="checkBox">Do you want a circle or an oval instead of a square?</label>
+      </div>
+      </form>
+      <br>
+      <div id="square" class="centered">
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./drawShape.js"></script>
+  </body>
+</html>
